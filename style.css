@@ -1,0 +1,224 @@
+/*General*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #ffb80d;
+}
+::selection{
+    color: #fff;
+    background: #ffb80d;
+}
+body{background-color: #f0f0f6;}
+p , span{color: #767676;}
+/*General*/
+
+/*header*/
+header{
+    background-image: url("imgs/Background Image.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.info{width: 550px;}
+
+.info h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 123.6%;
+}
+.info span{color: #ffb80d;}
+
+.info p{
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    margin: 20px 0 40px;
+    line-height: 24px;
+}
+
+.info button{
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    background: #FFB400;
+    border-radius: 5px;
+}
+/*header*/
+.container{
+    text-align: center;
+    width: 970px;
+    margin: auto;
+}
+/*services*/
+.services{
+    margin: 80px 0;
+    font-weight: 700;
+}
+.services h2, .portfolio h2{
+    font-size: 32px;;
+}
+.services-desc p,.portfolio p{
+    margin: 20px auto;
+    width: 500px;
+}
+.services-list, .my_work{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service{
+    background-color: #fff;
+    width: 300px;
+    padding: 30px;
+    margin: 10px;
+    height: 225px;
+}
+.service h3{
+    text-transform: capitalize;
+    margin: 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+.service p{
+    font-weight: 400;
+    font-size: 15px;
+}
+.service a{
+    display: inline-block;
+    margin-top: 20px;
+    color: #ffb80d;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+}
+/*services*/
+
+/*Portfolio*/
+.portfolio{
+    margin: 80px 0 20px;
+    font-weight: 700;
+}
+.portfolio .my_work div{
+    width: 310px;
+    height: 300px;
+    margin: 5px;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+}
+
+.portfolio .my_work div:hover{
+    background-color: #eea236;
+    z-index: 1;
+}
+/*Portfolio*/
+.contact{
+    height: 756px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact h2{
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.client-info{
+    width: 55%;
+    text-align: left;
+    margin: 20px;
+}
+.client-info form{
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+.client-info form label{
+    font-weight: 500;
+    font-size: 15px;
+    color: #7f7f7f;
+    display: block;
+}
+.client-info form input ,textarea{
+    margin: 10px 0;
+    padding: 12px 15px;
+    background-color: #f0f0f6;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+textarea{
+    resize: none;
+}
+.client-info form input[type='submit']{
+    padding: 8px;
+    width: 40%;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffb400;
+    color: #2b2b2b;
+}
+
+.contact-info{
+    width: 40%;
+}
+.contact-info .cards{
+    height: 542px;
+    display: flex;
+    flex-direction: column;
+}
+.contact-info .card{
+    width: 370px;
+    height: 170px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.contact-info .card .icon{
+    width:30px;
+    margin: 0 auto 20px;
+    background-color:  #ffb400;
+    border-radius: 50%;
+    text-align: center;
+}
+.contact-info .card .icon img{
+    margin: 5px;
+}
+.card-info p{
+    font-weight: bold;
+}
+.card-info div{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 930px;
+    margin: 30px 0 60px;
+}
+/*footer*/
+footer{
+    padding: 20px;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+/*footer*/
